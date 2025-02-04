@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: hsla(298, 66%, 57%, .7);
+    height: 100vh;
+}
+
+.container{
+    width: 360px;
+    /* min-width:400px; */
+    height: 90vh;
+    margin: auto;
+    margin-top: 2rem;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg {
+    margin-bottom: 1rem;
+    background: darkred;
+    color : white;
+    font-weight: 800;
+    border-radius: 8px;
+    border: none;
+}
+
+.calculator{
+    border: 1px solid #717377;
+    padding: 10px;
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 16px;
+    background: #DEFF7D;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+}
+
+.calculation{
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: auto;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#inputBox,
+#answer{
+    width: 97%;
+    margin:5px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 4px;
+    background: #000000;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+    outline:none ;
+}
+
+#answer{
+    text-align: left;
+    margin-top: 0;
+}
+
+input::placeholder{
+    color: #ffffff;
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    margin-top: 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+button{
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background:#14E1FB;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.equalBtn{
+    background-color: #D614FB;
+}
+
+.big-btn {
+    width: 49%;
+    border-radius: 6px;
+    font-size: 2rem;
+}
+.last-line {
+    justify-content: space-around;
+}
+
+.operator{
+    color: #D614FB;
+}
+
+@media (max-width: 768px) {
+    .container {
+       /* width:90%; */
+        margin: auto;
+    }
+}
