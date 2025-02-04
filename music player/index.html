@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="count"></div>
+        <div class="player">
+            <img id="img" src="/mypic.jpg" alt="player">
+        </div>
+        <div class="controller">
+            <h3 id="detail"></h3>
+            <div class="control">
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="progress-ball"></div>
+            </div>
+            <div class="time">
+                <p class="currentTime">0.00</}ppp>
+                <p class="duration">0.00</p>
+            </div>
+            <div class="controlBtn">
+                <i id="loop" class="fa-solid fa-rotate-right btn"></i>
+                <i id="prev" class="fa-solid fa-backward-step btn"></i>
+                <i id="play" class="fa-solid fa-play btn"></i>
+                <i id="pause" class="fa-regular fa-pause btn"></i>
+                <i id="next" class="fa-solid fa-forward-step btn"></i>
+                <i id="repeat" class="fa-solid fa-repeat btn"></i>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio" src=""></audio>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

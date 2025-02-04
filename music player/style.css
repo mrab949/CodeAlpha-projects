@@ -1,0 +1,187 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-style: "Poppins" Arial, sans-serif;
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #46123d;
+ }
+
+ .app-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     min-height: 600px;
+     height: 90vh;
+     width: 60%;
+     min-width: 360px;
+     border-radius: 10px;
+     box-shadow: 0 0 34px 12px;
+     background-image: linear-gradient(to top right, #850f85, #431e4e, #19417c);
+     overflow: hidden;
+ }
+
+ .count {
+     margin-top: 1rem;
+     font-size: 1.3rem;
+     color: #fcfafa;
+ }
+
+ .player {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 70vh;
+     border: none;
+ }
+
+
+ .player #img {
+     width: 280px;
+     height: 280px;
+     border-radius: 50%;
+     outline: 5px;
+
+ }
+
+ .glowing-border {
+     animation: glowingEffect 1s infinite alternate, rotate 20s infinite linear;
+ }
+
+ /* Animation for glowing effect */
+ @keyframes glowingEffect {
+     0% {
+         box-shadow: 0 0 14px 8px #FF008A;
+     }
+
+     50% {
+         box-shadow: 0 0 25px 12px #00FF31;
+     }
+
+     75% {
+         box-shadow: 0 0 25px 12px #00D2FF;
+     }
+
+     100% {
+         box-shadow: 0 0 24px 11px #FF00CB;
+     }
+ }
+
+ @keyframes rotate {
+     from {
+         transform: rotate(0deg);
+     }
+
+     to {
+         transform: rotate(360deg);
+     }
+ }
+
+ .controller {
+     width: 100%;
+     height: 14rem;
+     border: none;
+     padding: 1rem;
+     background: #1A1B24;
+ }
+
+ #detail {
+     color: white;
+     margin-bottom: 2rem;
+ }
+
+ .progress-container {
+     margin: 1rem 0;
+     position: relative;
+     width: 100%;
+     height: 3px;
+     background: #585858;
+     border-radius: 5px;
+     overflow: hidden;
+     margin-bottom: 0.4rem;
+ }
+
+ .progress-bar {
+     position: relative;
+     top: 0;
+     left: 0;
+     height: 3px;
+     border-radius: 5px;
+     background-color: #FFFFFF;
+     width: 0%;
+ }
+
+ .progress-ball {
+     position: relative;
+     top: -14px;
+     left: 0;
+     width: 13px;
+     height: 13px;
+     background-color: #FFFFFF;
+     border-radius: 50%;
+     transform: translateX(-50%);
+     cursor: pointer;
+ }
+
+ .time {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #f7f2f2;
+     margin-bottom: 1rem;
+ }
+
+ .controlBtn {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-direction: row;
+     height: 3rem;
+     width: 100%;
+     max-width: 500px;
+     margin: 0px auto;
+     background: transparent;
+ }
+
+ .controlBtn i {
+     color: black;
+     font-size: 1.7rem;
+     font-weight: 800;
+     cursor: pointer;
+ }
+
+ .btn {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     background: white;
+     color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #play {
+     padding-left: 4px;
+ }
+
+ #pause {
+     display: none;
+ }
+ 
+ 
+ @media (max-width: 760px) {
+     .app-container {
+         width: 100%;
+         height: 100vh;
+         border-radius: 0px;
+     }
+ }
